@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriSnack Club — Un club de sabor natural</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar container">
+      <div class="brand">
+        <img src="logo.jpeg" alt="NutriSnack Club" class="logo">
+        <div class="brand-text">
+          <h1>NutriSnack Club</h1>
+          <p class="tagline">Un club de sabor natural</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#productos" class="nav-link">Productos</a>
+        <a href="#combos" class="nav-link">Combos</a>
+        <a href="#" id="open-cart" class="nav-link">Pedido 🛒<span class="badge" id="cart-count">0</span></a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="productos" class="section section-light">
+      <div class="container">
+        <h2 class="section-title reveal">Productos</h2>
+        <div class="grid products-grid">
+          <article class="card product reveal-zoom">
+            <img src="https://picsum.photos/600/400?random=11" alt="Mix Premium">
+            <div class="card-body">
+              <h3>Mix Premium</h3>
+              <p class="price">$2500</p>
+              <button class="btn add" data-nombre="Mix Premium" data-precio="2500">🛒 Agregar</button>
+            </div>
+          </article>
+          <article class="card product reveal-zoom">
+            <img src="https://picsum.photos/600/400?random=12" alt="Almendras">
+            <div class="card-body">
+              <h3>Almendras</h3>
+              <p class="price">$3000</p>
+              <button class="btn add" data-nombre="Almendras" data-precio="3000">🛒 Agregar</button>
+            </div>
+          </article>
+          <article class="card product reveal-zoom">
+            <img src="https://picsum.photos/600/400?random=13" alt="Nueces">
+            <div class="card-body">
+              <h3>Nueces</h3>
+              <p class="price">$2800</p>
+              <button class="btn add" data-nombre="Nueces" data-precio="2800">🛒 Agregar</button>
+            </div>
+          </article>
+          <article class="card product reveal-zoom">
+            <img src="https://picsum.photos/600/400?random=14" alt="Maní Japonés">
+            <div class="card-body">
+              <h3>Maní Japonés</h3>
+              <p class="price">$2000</p>
+              <button class="btn add" data-nombre="Maní Japonés" data-precio="2000">🛒 Agregar</button>
+            </div>
+          </article>
+          <article class="card product reveal-zoom">
+            <img src="https://picsum.photos/600/400?random=15" alt="Pistachos">
+            <div class="card-body">
+              <h3>Pistachos</h3>
+              <p class="price">$3500</p>
+              <button class="btn add" data-nombre="Pistachos" data-precio="3500">🛒 Agregar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="combos" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Combos</h2>
+        <div class="grid products-grid">
+          <article class="card product reveal-zoom">
+            <img src="https://picsum.photos/600/400?random=21" alt="Combo Energía">
+            <div class="card-body">
+              <h3>Combo Energía</h3>
+              <p class="muted">Mix Premium + Almendras</p>
+              <p class="price">$5200</p>
+              <button class="btn add" data-nombre="Combo Energía" data-precio="5200">🛒 Agregar</button>
+            </div>
+          </article>
+          <article class="card product reveal-zoom">
+            <img src="https://picsum.photos/600/400?random=22" alt="Combo Familiar">
+            <div class="card-body">
+              <h3>Combo Familiar</h3>
+              <p class="muted">Nueces + Maní Japonés + Mix</p>
+              <p class="price">$7000</p>
+              <button class="btn add" data-nombre="Combo Familiar" data-precio="7000">🛒 Agregar</button>
+            </div>
+          </article>
+          <article class="card product reveal-zoom">
+            <img src="https://picsum.photos/600/400?random=23" alt="Combo Deluxe">
+            <div class="card-body">
+              <h3>Combo Deluxe</h3>
+              <p class="muted">Pistachos + Mix Premium + Almendras</p>
+              <p class="price">$8800</p>
+              <button class="btn add" data-nombre="Combo Deluxe" data-precio="8800">🛒 Agregar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pedido" class="section section-light">
+      <div class="container center">
+        <h2 class="section-title reveal">Hacé tu Pedido</h2>
+        <p class="muted reveal">Armá tu carrito con los productos que quieras y envianos el pedido por email.</p>
+        <button class="btn btn-lg" id="open-cart-cta">Abrir carrito 🛒</button>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Nosotros</h2>
+        <p class="lead reveal">En <strong>NutriSnack Club</strong> creemos en el poder de los alimentos naturales. Seleccionamos frutos secos de la mejor calidad para brindarte productos sanos, ricos y frescos. Trabajamos con lotes pequeños para garantizar sabor y frescura en cada paquete.</p>
+        <p class="reveal">Nuestro objetivo es acompañarte con snacks nutritivos para tu día a día: en el trabajo, después del gimnasio o en familia. ¡Sumate al club del sabor natural!</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-light">
+      <div class="container">
+        <h2 class="section-title reveal">Contacto</h2>
+        <form id="contact-form" class="form reveal">
+          <div class="field">
+            <label>Nombre</label>
+            <input type="text" id="nombre" required>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="field">
+            <label>Mensaje</label>
+            <textarea id="mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel">
+    <button id="close-cart" class="icon-btn" aria-label="Cerrar">✖</button>
+    <h3>Tu Pedido</h3>
+    <ul id="cart-items"></ul>
+    <p id="cart-total"><strong>Total: $0</strong></p>
+    <button id="send-order" class="btn full">Enviar pedido</button>
+  </aside>
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> NutriSnack Club — Hecho con cariño.</p>
+    </div>
+  </footer>
+
+  <div id="toast-root"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
